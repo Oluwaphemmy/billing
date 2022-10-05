@@ -9,7 +9,7 @@
   </head>
   <body>
     <!--background-->
-    <div class="bg-body container flex">
+    <div class="bg-body container block md:flex md:flex-row">
       <!--right container-->
 
       <div class="bg-pri m-10 my-12 mx-32">
@@ -67,12 +67,12 @@
       <!--left container-->
 
       <div class="">
-        <h3 class="text-blue-900 font-bold text-2xl mt-16 ml-40 leading-10">
+        <h3 class="text-blue-900 font-bold text-2xl mt-16 ml-5 leading-10">
           Billing
         </h3>
 
         <!--ORDINARY-->
-        <div class="ml-40 mt-4">
+        <div class="ml-5 mt-4">
           <h5 class="font-bold text-base text-blue-800 w-28">Order History</h5>
           <p class="text-sm font-medium w-72">
             Manage billing information and view receips
@@ -81,7 +81,9 @@
 
         <!--calender-->
 
-        <div class="ml-40 mt-6 flex h-64 w-fit gap-x-1.5">
+        <div
+          class="ml-5 md:ml-3 mt-6 w-2 flex h-64 md:w-fit md:gap-x-1.5 text-sm"
+        >
           <!--date-->
           <div class="">
             <p class="h-6 ml-4 w-9 font-bold text-sm leading-5">Date</p>
@@ -101,22 +103,26 @@
 
           <!--Type-->
           <div class="">
-            <p class="w-24 h-6 mt-4 font-bold text-sm leading-5 ml-52">Type</p>
+            <p class="w-24 h-6 mt-1 font-bold text-sm leading-5 m:ml-52 ml-7">
+              Type
+            </p>
             <p
-              class="w-24 h-6 font-bold text-xs leading-6 text-blue-600 ml-56 mb-3"
+              class="w-24 h-6 font-bold text-sm leading-10 text-blue-600 mb:ml-48 mb-3 ml-7"
             >
               Pro Annual
             </p>
-            <p class="w-24 h-6 font-bold text-xs leading-6 text-blue-600 ml-56">
+            <p
+              class="w-24 h-6 font-bold text-sm leading-10 text-blue-600 md:ml-48 ml-7 mt-5"
+            >
               Pro Annual
             </p>
             <p
-              class="w-24 h-6 font-bold text-xs leading-6 text-blue-600 ml-56 mt-4"
+              class="w-24 h-6 font-bold text-sm md:leading-6 leading-tight text-blue-600 md:ml-48 ml-7 mt-4"
             >
-              Ponsored Post
+              Sponsored Post
             </p>
             <p
-              class="w-24 h-6 font-bold text-xs leading-6 text-blue-600 ml-56 mt-4"
+              class="w-24 h-6 font-bold text-sm m:leading-6 leading-tight text-blue-600 md:ml-48 ml-7 mt-4"
             >
               Sponsored-Post
             </p>
@@ -124,45 +130,104 @@
 
           <!--Receipts-->
           <div class="">
-            <p class="w-16 h-6 mt-4 font-bold text-sm leading-5 ml-64">
+            <p class="w-16 h-6 mt-1 font-bold text-sm leading-5 md:ml-64 ml-7">
               Receipts
             </p>
+            <div class="leading-10">
+              <a
+                class="md:ml-64 ml-7 mt-10 w-20 h-6 font-bold text-sm text-blue-600 border-solid border-2 rounded-lg border-gray-300 py-1 px-2 hover:bg-gray-200"
+                href=""
+                >Download</a
+              >
+            </div>
+            <div class="mt-5">
+              <a
+                class="font-bold text-sm text-blue-600 mb-2 border-solid border-2 rounded-lg ml-7 border-gray-300 py-1 px-3 hover:bg-gray-200"
+                href=""
+                >Download</a
+              >
+            </div>
 
-            <a
-              class="ml-64 mb-2 w-20 h-6 font-bold text-xs leading-6 text-blue-600 border-solid border-4 rounded-lg border-gray-300 py-2 px-4"
-              href=""
-              >Download</a
-            >
+            <div class="mt-5">
+              <a
+                class="md:ml-64 mt-7 w-20 h-6 font-bold text-sm text-blue-600 border-solid border-2 rounded-lg border-red-300 py-1 px-2 ml-7 hover:bg-gray-200"
+                href=""
+                >Download</a
+              >
+            </div>
 
-            <a
-              class="font-bold text-xs leading-6 text-blue-600 border-solid border-4 rounded-lg border-gray-300"
-              href=""
-              >download</a
-            >
-            <a
-              class="ml-64 mt-5 w-20 h-6 font-bold text-xs leading-6 text-blue-600 border-solid border-4 rounded-lg border-gray-300 py-2 px-4"
-              href=""
-              >download</a
-            >
-            <a
-              class="ml-64 mb-8 w-20 h-6 font-bold text-xs leading-6 text-blue-600 border-solid border-4 rounded-lg border-gray-300 py-2 px-4"
-              href=""
-              >download</a
-            >
+            <div class="mt-5">
+              <a
+                class="md:ml-64 ml-7 mt-16 m-28 w-20 h-6 font-bold text-sm md:leading-10 leading-loose text-blue-600 border-solid border-2 rounded-lg border-gray-300 py-1 px-2 hover:bg-gray-200"
+                href=""
+                >Download</a
+              >
+            </div>
           </div>
         </div>
       </div>
 
       <!--red card-->
       <div
-        class="text-blue-900 w-96 h-56 bg-red-700 p-8 shadow-lg flex flex-col gap-2 rounded mt-24 ml-32"
+        class="text-blue-900 w-96 h-56 bg-red-700 p-8 shadow-lg flex flex-col gap-2 rounded md:mt-24 md:ml-96 ml-10 mb-10"
       >
         <p class="text-white font-bold leading-6 w-20 h-6 top-8 left-8">
           Your plan
         </p>
-        <h4>Pro Annual <span> Renew on Nov. 2021 </span></h4>
-        <a href="">Cancel Subscription</a>
+        <h4 class="font-bold h-9 text-4xl leading-9 text-white w-32">
+          Pro Annual
+          <span class="w-36 h-5 font-medium text-sm leading-5 text-white">
+            Renew on Nov. 2021
+          </span>
+        </h4>
+        <button
+          class="w-40 h-2 font-medium text-center text-xs text-white px-2 py-2 mt-20 p-2 ml-20 leading-5 hover:text-red-300"
+        >
+          Cancel
+        </button>
       </div>
+
+      <!--Learn more-->
+    </div>
+    <div
+      class="text-red-600 w-20 h-6 md:ml-96 ml-10 mb-8 font-bold text-xs leading-6 decoration-red-700 underline"
+    >
+      <a href="">learn more</a>
+    </div>
+
+    <!--method-->
+    <div class="md:mt-10 gap-1 h-12 left-80 md:ml-96 ml-10 mb-5">
+      <p class="text-blue-800 font-bold text-base leading-6 w-36 h-6">
+        Payment method
+      </p>
+      <p class="w-80 h-5 font-medium text-sm leading-5 text-blue-500">
+        Manage billing information and view receips
+      </p>
+    </div>
+
+    <!--visa-->
+    <div
+      class="flex md:justify-between flex-col md:flex-row md:mt-10 md:ml-60 ml-10"
+    >
+      <div class="flex items-center mr-32">
+        <img class="w-16 h-9 mr-6" src="/img/visa.png" alt="" />
+
+        <p class="w-80 h-6 font-medium text-sm leading-6 text-blue-500 ml-2">
+          Visa ending in 2255
+        </p>
+      </div>
+
+      <a
+        href=""
+        class="items-end px-2 py-1 gap-10 w-24 h-10 border-2 rounded-lg border-solid border-gray-500 leading-3 mt-5 hover:bg-gray-300"
+        ><p class="w-16 h-6 font-medium text-base text-blue-500">Remove</p></a
+      >
+    </div>
+
+    <div
+      class="w-14 h-6 font-normal leading-5 md:ml-40 ml-14 mt-10 hover:text-red-500 text-blue-400"
+    >
+      <a href="log out">log out</a>
     </div>
   </body>
 </html>
